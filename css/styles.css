@@ -50,6 +50,8 @@ body {
         border: 0px;
         border-radius: 4px;
         text-align: center;
+        cursor: pointer;
+
 }
 .container {
         width: 1200px;
@@ -157,6 +159,7 @@ body {
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),        
         url(../images/background.jpg);
+        background-size: cover;
 }
 .hero-wrapper {
 
@@ -307,10 +310,16 @@ padding-bottom: 94px;
 }
 
 /* =======================футер======================= */
+.footer .container {
+        display: flex;
+}
 .footer{
         background-color: var(--footer-bg-color);
         padding-bottom: 60px;
         padding-top: 60px;
+}
+.footer-adress {
+        margin-right: 70px;
 }
 
 .footer-logo {
@@ -344,6 +353,23 @@ letter-spacing: 0.03em;
 
 .address-list li+li {
         margin-top: 9px;
+}
+.socials-footer{
+        margin-top: 12px;
+}
+.socials-title {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+}
+.socials-footer .social-link{
+        --color4: #ffffff;      
+        background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 /* =============================Портфолио========================== */
@@ -423,10 +449,12 @@ background-color: var(--primary-bg-color);
 max-width: 370px;
 /* padding-bottom: 20px; */
 
-
 display: flex;
 justify-content: center;
 
+}
+.projects-item:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-text {
         padding: 20px 24px;

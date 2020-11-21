@@ -8,11 +8,20 @@
 
 
 /* ===========хедер======= */
+.header-contacts-icon {
+  margin-right: 10px;
+}
+.header-adress:hover .header-contacts-icon {
+  --color3: #2196f3;
+}
 .mail-icon {
     width: 16px;
     height: 12px;
 }
-
+ .tel-icon{
+   width: 10px;
+   height: 16px;
+ }
 
 
 
@@ -107,13 +116,21 @@ justify-content: space-between;
     display: flex;
     width: 170px;
     height: 90px;
-    text-decoration: none;
+
     justify-content: center;
     align-items: center;
-    border: 1px solid #AFB1B8;
+    border: 1px solid;
+    border-color: #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8; 
 }
-.clients-icon{
-  /* display: block; */
+.clients-link:hover {
+border-color: var(--accent-color);
 }
+/* .clients-icon{
+   display: block;
+ } */
+ .clients-link:hover .clients-icon{
+   --color4: #2196f3;
+   box-shadow:  drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+ }
