@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/* ===========хедер======= */
+.mail-icon {
+    width: 16px;
+    height: 12px;
+}
+
+
+
+
+/* =================Преимущества====================== */
+
+.features-item::before{
+  content: "";
+  display: block;
+
+  width: 270px;
+  height: 120px;
+  
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+   
+}
+
+.antenna::before{
+    
+  background-image: url(../images/icons/antenna.svg);
+}
+
+.astronaut::before{
+  background-image: url(../images/icons/astronaut.svg);
+}
+.clock::before{
+  background-image: url(../images/icons/clock.svg);
+}
+.diagram::before{
+  background-image: url(../images/icons/diagram.svg);
+}
+
+/* ======================Наша команда=========================== */
+.socials{
+  display: flex;
+  justify-content: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+background-size: cover;
+  background-color: var(--primary-bg-color)
+
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  /* fill: #afb1b8; */
+}
+.social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon{
+  --color4: #ffffff;
+}
+
+/* ===============================Клиенты===================== */
+
+
+.clients-list {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.clients-iteam:not(:last-child){
+  margin-right: 30px;
+}
+
+
+.clients-link{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8; 
+}
+.clients-icon{
+  /* display: block; */
+}
