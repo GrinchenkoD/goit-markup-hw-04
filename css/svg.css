@@ -22,7 +22,10 @@
    width: 10px;
    height: 16px;
  }
-
+ .header-adress {
+   display: flex;
+   align-items: center;
+ }
 
 
 /* =================Преимущества====================== */
